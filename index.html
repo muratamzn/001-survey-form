@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Müşterilerin taleplerini ve ilgi alanlarını
+    ölçmek ve Değerlendirmek."
+    />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      #span1 {
+        color: red;
+      }
+      #submit {
+        background-color: red;
+        color: white;
+        width:100px;
+        height: 30px;
+        
+
+      }
+    </style>
+  </head>
+
+  <div id="container">
+    <body>
+      <h1 style="color: white;">NET<span id="span1">FLİX</span></h1>
+      <h3 style="color: white;">
+        Thank you for signing up at Netflix. Tell us more about your self
+      </h3>
+      <br />
+      <form action="result.html" method="GET" enctype="multipart/form-data">
+        <div>
+          <label for="Name">Name</label><br />
+          <input
+            type="text"
+            name="Name"
+            id="Name"
+            placeholder="Enter your name"
+            size="40"
+          />
+          <br /><br />
+        </div>
+
+        <div>
+          <label for="Age">Age</label><br />
+          <input
+            type="number"
+            name="Age"
+            placeholder="Age"
+            min="1"
+            max="200"
+            size="40"
+          />
+          <br /><br />
+        </div>
+
+        <div>
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            size="40"
+          />
+          <br /><br />
+        </div>
+
+        <div>
+          <label for="content type">Content type</label><br />
+          <select id="Contenttype" name="Content type">
+            <option value="series">Series</option>
+            <option value="documentary">Documentary</option>
+            <option value="movie">Movie</option>
+          </select>
+          <br /><br />
+        </div>
+
+        <div>
+          <label >Movie type</label><br />
+
+          <input type="checkbox" id="comedy" name="Movie type" value="comedy" />
+          <label for="comedy">Comedy</label><br />
+          <input type="checkbox" id="action" name="Movie type" value="action" />
+          <label for="action">Action</label><br />
+          <input type="checkbox" id="romance" name="Movie type" value="romance" checked/>
+          <label for="romance">Romance</label><br />
+          
+          <br />
+        </div>
+
+        <div>
+          <label for="gender">Gender</label><br />
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label><br />
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="fmale">Female</label><br />
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label><br />
+          <br />
+        </div>
+
+        <div>
+          <label for="feed back">Feed back</label><br />
+          <textarea
+            name="Feed back"
+            id="Feed back"
+            cols="40"
+            rows="6"
+            placeholder="Any comment"
+          ></textarea>
+          <br /><br />
+        </div>
+
+        <div>
+          <input
+            type="submit"
+            id="submit"
+            formaction="/result.html"
+            value="Submit"
+          />
+          <br />
+        </div>
+      </form>
+    </body>
+  </div>
+</html>
+
+<!-- - Creat structure of the HTML5
+- Give name of your project (title)
+- Create the main structure of the container (div id="container")
+- Create Main Topic of the project (id="title")
+- Create a description of your project (id="description")
+- Create a form (id="survey-form")
+- Create 4 divisions (class="box") for each label and single-line text input field (Tips:Don't forget to use placeholder)
+- Create a division (class="box") for a dropdown list. (Tips:dont forget to use a label tag)
+- Create a division (class="box") for checkbox list
+- Create a division (class="box") for radio buttons
+- Create a division (class="box") for a multi-line input field (Tips: a text area)
+- Create a button for id="submit" the form -->
