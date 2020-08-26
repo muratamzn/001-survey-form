@@ -19,9 +19,10 @@
         color: white;
         width:100px;
         height: 30px;
-        
-
       }
+      .bar {
+        width: 500px;
+        height: 50px;
     </style>
   </head>
 
@@ -40,7 +41,7 @@
             name="Name"
             id="Name"
             placeholder="Enter your name"
-            size="40"
+            class="bar"
           />
           <br /><br />
         </div>
@@ -53,7 +54,7 @@
             placeholder="Age"
             min="1"
             max="200"
-            size="40"
+            class="bar"
           />
           <br /><br />
         </div>
@@ -65,14 +66,14 @@
             id="email"
             name="email"
             placeholder="Enter your email"
-            size="40"
+            class="bar"
           />
           <br /><br />
         </div>
 
         <div>
-          <label for="content type">Content type</label><br />
-          <select id="Contenttype" name="Content type">
+          Content type<br />
+          <select id="Contenttype" name="Content type" class="bar">
             <option value="series">Series</option>
             <option value="documentary">Documentary</option>
             <option value="movie">Movie</option>
@@ -81,8 +82,7 @@
         </div>
 
         <div>
-          <label >Movie type</label><br />
-
+          Movie type <br>
           <input type="checkbox" id="comedy" name="Movie type" value="comedy" />
           <label for="comedy">Comedy</label><br />
           <input type="checkbox" id="action" name="Movie type" value="action" />
@@ -94,7 +94,7 @@
         </div>
 
         <div>
-          <label for="gender">Gender</label><br />
+          Gender
           <input type="radio" id="male" name="gender" value="male" />
           <label for="male">Male</label><br />
           <input type="radio" id="female" name="gender" value="female" />
@@ -105,13 +105,14 @@
         </div>
 
         <div>
-          <label for="feed back">Feed back</label><br />
+          Feed back <br>
           <textarea
             name="Feed back"
             id="Feed back"
             cols="40"
             rows="6"
             placeholder="Any comment"
+            class="bar"
           ></textarea>
           <br /><br />
         </div>
