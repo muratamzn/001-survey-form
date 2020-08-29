@@ -11,3 +11,22 @@ body {
     margin: auto;
     padding-left: 40px;
   }
+  #Contenttype {
+    width: 505px;
+    height: 35px;
+  }
+  #span1 {
+    color: red;
+  }
+  #submit {
+    background-color: red;
+    color: white;
+    width:100px;
+    height: 30px;
+    margin-left: 200px;
+    border-radius: 36px;
+  }
+  .bar {
+    width: 500px;
+    height: 50px;
+  }
