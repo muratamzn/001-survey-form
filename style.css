@@ -1,32 +1,55 @@
 body {
-    /* background-color: white; */
-    background-image: url("./backround_01.jpg");
-  }
+  /* background-color: white; */
+  background-image: url("./backround_01.jpg");
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+div#container {
+  background-color: rgb(0, 0, 0, 0.85);
+  width: 550px;
+  height: 700px;
+  background-color: black;
+
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 25px;
+  transform: translate(-50%, -38%);
+
+  color: white;
+}
+#logo {
+  color: white;
+  text-align: center;
   
-  div#container {
-    background-color:rgb(0, 0, 0, 0.85);
-    width: 550px;
-    height: 850px;
-    color: white;
-    margin: auto;
-    padding-left: 40px;
-  }
-  #Contenttype {
-    width: 505px;
-    height: 35px;
-  }
-  #span1 {
-    color: red;
-  }
-  #submit {
-    background-color: red;
-    color: white;
-    width:100px;
-    height: 30px;
-    margin-left: 200px;
-    border-radius: 36px;
-  }
-  .bar {
-    width: 500px;
-    height: 50px;
-  }
+}
+
+#contenttype {
+  width: 505px;
+  height: 35px;
+}
+
+h1 {
+  font-family: Impact;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+#span1 {
+  color: red;
+}
+
+#submit {
+  background-color: red;
+  color: white;
+  width: 100px;
+  height: 30px;
+  margin-left: 200px;
+  border-radius: 36px;
+}
+
+.bar {
+  width: 500px;
+  height: 50px;
+}
