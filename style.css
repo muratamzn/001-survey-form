@@ -1,55 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
 body {
-  /* background-color: white; */
-  background-image: url("./backround_01.jpg");
-  font-family: Arial, Helvetica, sans-serif;
-}
- 
-div#container {
-  background-color: rgb(0, 0, 0, 0.85);
-  width: 550px;
-  height: 700px;
-  background-color: black;
-
-  /* Center vertically and horizontally */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 25px;
-  transform: translate(-50%, -38%);
-
+  background-image: url("backround_01.jpg");
   color: white;
 }
-#logo {
-  color: white;
+
+#container{
+  background-color: rgb(0, 0, 0, 0.3);
+  margin: 30px 100px;
+}
+
+#title {
   text-align: center;
-  
-}
-
-#contenttype {
-  width: 505px;
-  height: 35px;
-}
-
-h1 {
-  font-family: Impact;
   font-size: 50px;
-  font-weight: bold;
-  color: white;
+  font-family: "Bowlby One SC", cursive;
+  padding-top: 15px;
+  letter-spacing: 5px;
 }
-#span1 {
+span {
   color: red;
+}
+
+#description {
+text-align: center;
+font-size: 23px;
+font-family: "Sorts Mill Goudy", sans-serif;
+margin-bottom: 15px;
+}
+
+#survey-form {
+  width: 500px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: auto;
+  padding-top: 10px;
+}
+
+#name,
+#number,
+#email,
+#dropdown {
+  margin-top: 16px;
+  height: 36px;
+  width: 400px;
+  padding: 10px;
+
+}
+#dropdown {
+  box-sizing: content-box;
+  resize: none;
+}
+.box {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.text-area {
+  margin-top: 10px;
 }
 
 #submit {
   background-color: red;
+  font-size: larger;
+  height: 45px;
+  width: 160px;
+  border-radius: 50px;
+  border: none;
   color: white;
-  width: 100px;
-  height: 30px;
-  margin-left: 200px;
-  border-radius: 36px;
+  cursor: pointer;
+  margin: 16px 0px 16px 150px;
 }
-
-.bar {
-  width: 500px;
-  height: 50px;
+#submit:hover {
+  background: white;
+  color: red;
+  cursor: pointer;
 }
